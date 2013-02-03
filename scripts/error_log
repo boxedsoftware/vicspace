@@ -1,0 +1,3 @@
+[24-Jul-2012 00:25:35] PHP Warning:  include(photo_upload.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/vivi1052/public_html/scripts/index.php on line 75
+[24-Jul-2012 00:25:35] PHP Warning:  include(photo_upload.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/vivi1052/public_html/scripts/index.php on line 75
+[24-Jul-2012 00:25:35] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'photo_upload.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/vivi1052/public_html/scripts/index.php on line 75

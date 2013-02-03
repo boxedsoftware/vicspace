@@ -1,0 +1,136 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Unwritten
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120710
+*/
+
+
+
+a {
+	text-decoration: underline;
+	color: #336784;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+body {
+	color: #595350;
+	line-height: 2em;
+	background: #989898  ;
+	font-size: 12pt;
+	width: 85%;
+	height: 85%; /* optional */
+	margin: 0 auto;
+}
+
+body,input {
+	font-family: Kreon, sans-serif;
+}
+
+br.clearfix {
+	clear: both;
+}
+
+strong {
+	color: #000;
+}
+
+h1,h2,h3,h4 {
+	font-weight: normal;
+	
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h2,h3,h4 {
+	color: #000;
+	font-family: Satisfy, script;
+	margin-bottom: 1.25em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+
+p {
+	margin-left: 1em;
+	margin-bottom: 1.75em;
+}
+
+ul {
+	margin-bottom: 1.75em;
+}
+
+ul h4 {
+	margin-bottom: 0.4em;
+}
+
+
+#splash {
+	padding: 40px;
+	position: relative;
+	background: #FFF;
+	margin: 20px 0 0 0;
+	height: 250px;
+	width: 1100px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+#wrapper {
+	
+	background: white;
+}
+
+.container { width:320px; }
+.cube { width:150px; height:150px; overflow:hidden; }
+.clear { clear:both; }
+
+
+.tooltip {
+			border-bottom: 1px dotted #000000; color: #000000; outline: none;
+			cursor: help; text-decoration: none;
+			position: relative;
+		}
+		.tooltip span {
+			margin-left: -999em;
+			position: absolute;
+		}
+		.tooltip:hover span {
+			border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+			font-family: Calibri, Tahoma, Geneva, sans-serif;
+			position: absolute; left: 1em; top: 2em; z-index: 99;
+			margin-left: 0; width: 250px;
+		}
+		.tooltip:hover img {
+			border: 0; margin: -10px 0 0 -55px;
+			float: left; position: absolute;
+		}
+		.tooltip:hover em {
+			font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+			display: block; padding: 0.2em 0 0.6em 0;
+		}
+		.classic { padding: 0.8em 1em; }
+		.custom { padding: 0.5em 0.8em 0.8em 2em; }
+		* html a:hover { background: transparent; }
+		.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+		.critical { background: #FFCCAA; border: 1px solid #FF3334;	}
+		.help { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+		.info { background: #9FDAEE; border: 1px solid #2BB0D7; }
+		.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+

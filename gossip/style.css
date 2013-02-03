@@ -1,0 +1,27 @@
+.wordwrap
+{
+width: 200px;
+height: 200px;
+white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+white-space: pre-wrap;       /* css-3 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+word-break: break-all;
+white-space: normal;
+text-align: justify;
+border: 2px solid #a1a1a1;
+background: #98AFC7;
+border-radius: 25px;
+-moz-border-radius: 25px; /* Firefox 3.6 and earlier */
+}
+td:hover 
+{
+	background-color: #fff;
+}
+.right
+{
+  text-align:justify;
+}
+
+

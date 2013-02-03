@@ -1,0 +1,59 @@
+<html>
+<head>
+	<script language="javascript" type="text/javascript">
+function limitText(limitField, limitCount, limitNum) {
+	if (limitField.value.length > limitNum) {
+		limitField.value = limitField.value.substring(0, limitNum);
+	} else {
+		limitCount.value = limitNum - limitField.value.length;
+	}
+}
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		//return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+//var mouseoversound=createsoundbite("whistle.ogg", "whistle.mp3")
+var clicksound=createsoundbite("button-16.wav", "button-16.mp3")
+</script>
+</head>
+<body>
+<form method="POST" id="insert" action="insert_table.php">
+<input type="text" name="message" id="message" size="40" onKeyDown="limitText(this.form.message,this.form.countdown,80);clicksound.playclip();" onKeyUp="limitText(this.form.message,this.form.countdown,80);" maxlength="80"></input>
+<input type="submit" value="Send"></input>
+<font size="1">
+<input readonly type="text" name="countdown" size="3" value="80"> characters left.</font>
+</form>
+</body>
+</html>
