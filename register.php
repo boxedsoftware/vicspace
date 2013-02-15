@@ -1,8 +1,4 @@
-<?php $title = "Registration"; ?>
-<?php
-$title;
-$connect = mysql_connect("localhost","root","Kangan123") or die("Couldn't connect; check your mysql_connect() settings");
-$database = mysql_select_db("vicspace") or die("Could not locate database!");
+<?php $title = "Registration";
 session_start();
 date_default_timezone_set("Australia/Melbourne");
 ?>

@@ -1,7 +1,5 @@
 <?php $title = "Connect...";
 include('header.php');
-$connect = mysql_connect("localhost","vivi1052_user","Kangan123") or die("Couldn't connect; check your mysql_connect() settings");
-$database = mysql_select_db("vivi1052_vicspace") or die("Could not locate database!");
 session_start();
 date_default_timezone_set("Australia/Melbourne");
 

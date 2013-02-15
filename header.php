@@ -2,8 +2,9 @@
 ob_start();
 session_start();
 $title;
-$connect = mysql_connect("localhost","vivi1052_user","Kangan123") or die("Couldn't connect; check your mysql_connect() settings");
-$database = mysql_select_db("vivi1052_vicspace") or die("Could not locate database!");
+//Please replace USERNAME and PASSWORD arguments to that of your mysql credentials
+$connect = mysql_connect("localhost","USERNAME","PASSWORD") or die("Couldn't connect; check your mysql_connect() settings");
+$database = mysql_select_db("vicspace") or die("Could not locate database!");
 date_default_timezone_set("Australia/Melbourne");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

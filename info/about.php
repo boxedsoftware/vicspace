@@ -19,5 +19,8 @@ Registration is completely free and open to and for the public.
 For optimum website experience  <a href="//affiliates.mozilla.org/link/banner/23154"><img src="/Images/Firefox.png" alt="Download: Fast, Fun, Awesome" /></a>
 <p>
 Programmed in <a href="http://www.ubuntu.com/"><img src="/Images/ubuntu1.png" /></a></font>
+</p>
+<P align="center" size="8">Vicspace<br />Version 1.0.9 - Created by <a target="_blank" href="http://au.linkedin.com/pub/sam-gungormez/57/b0a/420" >Sam Gungormez</a></P>
+  <P align="center" size="8"><font color="grey" size="4">www.boxedsoftware.com.au</font></P>
 <?php
 include($_SERVER['DOCUMENT_ROOT'].'/footer.php');?>

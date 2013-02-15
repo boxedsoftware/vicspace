@@ -1,7 +1,8 @@
 <base target="_parent" />
 <?php
-$connect = mysql_connect("localhost","vivi1052_user","Kangan123") or die("Couldn't connect; check your mysql_connect() settings");
-$database = mysql_select_db("vivi1052_vicspace") or die("Could not locate database!");
+//Please replace USERNAME and PASSWORD arguments to that of your mysql credentials
+$connect = mysql_connect("localhost","USERNAME","PASSWORD") or die("Couldn't connect; check your mysql_connect() settings");
+$database = mysql_select_db("vicspace") or die("Could not locate database!");
 
 $name = mysql_query("SELECT c_name, c_message FROM chat order by c_id DESC");
 $numonline = mysql_query("SELECT user_name from users WHERE user_online='1'");
