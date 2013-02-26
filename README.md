@@ -14,11 +14,19 @@ Version 1.0.9
 Installation:
 ----------------
 -Copy all files into your public-html or hosted web directory
+
 -Use CRON tool to schedule the PHP scripts within the cron directory (reset_daily_views.php 12AM-EVERYDAY, reset_post_limit.php 12AM-EVERYDAY, reset_weekend 8PM-SUNDAY)
+
 -Modify MySQL database credential parameters within header.php, chat/get_table.php, chat/insert_table.php and INSTALL/index.php
+
 -Run INSTALL directory (http://webserverurl/INSTALL or http://webserverurl/INSTALL/index.php) to import database
+
+-Modify Apache (PHP.ini or .httaccess) to allow a MAX_UPLOAD_SIZE and MAX_POST_SIZE of over 4MB if you want large photo file uploads to function
+
 -Access/Run website!
+
 -Default Admin Username: admin Password: Kangan123
+
 
 
 Features:
@@ -39,6 +47,7 @@ Features:
 -Weekend feature made to look nice using "Google Maps API"
 -Cron job php script which resets the user's weekend preference (I configured the CRON utility to run this script on a weekly basis Sundays)
 -Post a gossip post (optionally with a photo)
+-Photo upload with a 4MB limit
 -Comment a gossip
 -Delete a comment
 -Delete a gossip post (only original creator)
