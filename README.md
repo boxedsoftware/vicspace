@@ -40,7 +40,9 @@ Installation:
 Features:
 -----------
 -User Registration
+
 -Registration form authentication
+
 -Email sent to user's email account once successfully registered
 -User login
 -Login authentication
