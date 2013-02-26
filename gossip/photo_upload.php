@@ -8,7 +8,8 @@ $ufname = $uid."_".$_FILES["file"]["name"];
 if ((($_FILES["file"]["type"] == "image/gif")
 || ($_FILES["file"]["type"] == "image/jpeg")
 || ($_FILES["file"]["type"] == "image/pjpeg")
-|| ($_FILES["file"]["type"] == "image/bmp"))
+|| ($_FILES["file"]["type"] == "image/bmp")
+|| ($_FILES["file"]["type"] == "image/png"))
 && ($_FILES["file"]["size"] < 2000000))
   {
   if ($_FILES["file"]["error"] > 0)

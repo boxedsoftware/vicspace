@@ -9,8 +9,16 @@ than only public transport. Hence I developed vicspace.com.
 
 Live Demo: www.vicspace.com
 
-Version 1.0.9
+Version 1.0.10
 ==============
+Improvements
+-------------
+-PNG photo upload support
+
+
+
+
+
 Installation:
 ----------------
 -Copy all files into your public-html or hosted web directory
