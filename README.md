@@ -13,7 +13,8 @@ Version 1.0.10
 ==============
 Improvements
 -------------
--PNG photo upload support
+-PNG photo upload support  
+-Admin (or future Moderator) accounts can now delete all comments (access level 50 or higher)
 
 
 
@@ -76,7 +77,8 @@ To do:
 -Need to implement a contact us page  
 -Need to implement feedback page  
 -Passwords are hashed using MD5 (This should ideally be replaced with using SHA-512 encryption)  
--Users online feature must be polished as it does not detect offline users who's sessions have timed out - This is usually the case when they don't log out by closing the browser instead. One consideration would be to check all sessions and update MySQL accordingly via a Cron job every hour or so.
+-Users online feature must be polished as it does not detect offline users who's sessions have timed out - This is usually the case when they don't log out by closing the browser instead. One consideration would be to check all sessions and update MySQL accordingly via a Cron job every hour or so.  
+-Moderator accounts  
 
 
 Tools used:

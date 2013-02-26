@@ -10,7 +10,7 @@ $title = $query1[0];
 if (!$_SESSION['username'])
 {
 	echo "Sorry "."<i>".$_SESSION['username']."</i>"."<br>";
-	echo("You do not have sufficient priveleges. (You did not register as a person seeker) or you are not logged in");
+	echo("You must be logged in to view this content :( <a href=/index.php>Registration</a> is Quick, Free and Easy!");
 	include($_SERVER['DOCUMENT_ROOT'].'/footer.php');
 	die;
 }
@@ -69,6 +69,10 @@ $commentts = $row[4];
 
 echo '<tr><td class=wordwrap><font size=2><b><a href=/user_profile.php?name='.$commentuser.'>'.$commentuser.'</a></b>: '.$commentmessage.'</font> <font size=1 color=gray>at '.$commentts;
 if($uname == $commentuser)
+{
+echo ' <a href=/gossip/delete_comment.php?cid='.$commentid.'&gid='.$commentgossipid.'><img src=/Images/cancel.png /></a>';
+}
+else if($accesslevel > 50)
 {
 echo ' <a href=/gossip/delete_comment.php?cid='.$commentid.'&gid='.$commentgossipid.'><img src=/Images/cancel.png /></a>';
 }
